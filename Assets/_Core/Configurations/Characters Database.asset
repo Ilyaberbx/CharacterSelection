@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4357412110db4c4a8cf065e47edaf67c, type: 3}
+  m_Name: Characters Database
+  m_EditorClassIdentifier: 
+  charactersData:
+  - _icon: {fileID: 21300000, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
+    _prefab: {fileID: 1450178541376546, guid: 53a99e5977d74a54b8ec7152551f92af, type: 3}
+  - _icon: {fileID: 21300002, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
+    _prefab: {fileID: 1450178541376546, guid: 0c700c05063d08841a543e8006af7d8a, type: 3}
+  - _icon: {fileID: 21300004, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
+    _prefab: {fileID: 1450178541376546, guid: 8cba555f00519c445a67f37df6a732cf, type: 3}
+  - _icon: {fileID: 21300006, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
+    _prefab: {fileID: 1450178541376546, guid: c4b77ed62153f4b4a8e52a981d88913e, type: 3}
+  - _icon: {fileID: 21300008, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
+    _prefab: {fileID: 1450178541376546, guid: da47f9b5ff160434483d6e33e9c06aba, type: 3}
+  - _icon: {fileID: 21300010, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
+    _prefab: {fileID: 1450178541376546, guid: fbe3882f5a80eec4e94d8e2f0d4e9bf9, type: 3}
+  - _icon: {fileID: 21300012, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
+    _prefab: {fileID: 1450178541376546, guid: abc4602540b9c5245b0c4cf5bfbfa86b, type: 3}
+  - _icon: {fileID: 21300014, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
+    _prefab: {fileID: 1450178541376546, guid: 2c1329a7c9cbc294098ecdd208a800a8, type: 3}
+  - _icon: {fileID: 21300016, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
+    _prefab: {fileID: 1450178541376546, guid: 9770b590bf458494da2ac5a3697c387a, type: 3}
+  - _icon: {fileID: 21300096, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
+    _prefab: {fileID: 1450178541376546, guid: 3415faee9fdf1c446bcf1ef4d62405c5, type: 3}
+  - _icon: {fileID: 21300098, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
+    _prefab: {fileID: 1450178541376546, guid: 8bb46685209fef6499b17da41e4a1025, type: 3}
+  - _icon: {fileID: 21300100, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
+    _prefab: {fileID: 1450178541376546, guid: d9647bf3567c4e64b9f12ab297acbc61, type: 3}
+  - _icon: {fileID: 21300102, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
+    _prefab: {fileID: 1450178541376546, guid: ae7d8b00e1852d94e8652d405171699b, type: 3}
+  - _icon: {fileID: 21300104, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
+    _prefab: {fileID: 1450178541376546, guid: b6db6d6259535b249878f2637522e7e8, type: 3}
+  - _icon: {fileID: 21300106, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
+    _prefab: {fileID: 1450178541376546, guid: 31fd5c215f0e7274c86269e8c095ffc0, type: 3}
+  - _icon: {fileID: 21300108, guid: b08e570699f1c8a4f9cc388204aef3bc, type: 3}
+    _prefab: {fileID: 1450178541376546, guid: fef1cf2afab8c8e48b0819ae608ecdcb, type: 3}

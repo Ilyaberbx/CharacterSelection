@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3666ff2caf5340eaa9b1086d7f87ac73, type: 3}
+  m_Name: Screens Settings
+  m_EditorClassIdentifier: 
+  _presentersData:
+  - _serializedType:
+      _fullQualifiedName: StartlingPlay.Core.Presenters.SelectionPresenter, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    _prefab: {fileID: 1356607423233333581, guid: d05fee48f5f22fa4d8a29826559d9b84, type: 3}
+  - _serializedType:
+      _fullQualifiedName: StartlingPlay.Core.Presenters.GameplayPresenter, Assembly-CSharp,
+        Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    _prefab: {fileID: 1356607423233333581, guid: d05fee48f5f22fa4d8a29826559d9b84, type: 3}
