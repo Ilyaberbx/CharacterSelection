@@ -175,11 +175,12 @@ MonoBehaviour:
       type: {class: PocoServicesInstaller, ns: Better.Locators.Runtime.Installers, asm: BetterLocators.Runtime}
       data:
         _services:
-        - rid: 7099748440624857098
-    - rid: 7099748440624857098
-      type: {class: CharactersService, ns: StartlingPlay.Services.Character, asm: Assembly-CSharp}
+        - rid: 7099748461276561410
+    - rid: 7099748461276561410
+      type: {class: CharactersService, ns: StarlingPlay.Services.Character, asm: Assembly-CSharp}
       data:
         _settings: {fileID: 11400000, guid: 838dbaf3f83507a40ad45de27eef6912, type: 2}
+        _container: {fileID: 1343130774}
 --- !u!1 &297543880
 GameObject:
   m_ObjectHideFlags: 0
@@ -248,8 +249,8 @@ Camera:
   m_GameObject: {fileID: 801544079}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.39215687, g: 0.44313726, b: 0.5254902, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.91764706, g: 0.5411765, b: 0.5411765, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -278,7 +279,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 23
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -349,17 +350,77 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91f21c31bae8456ebd6c74666bc364c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterSelectionScene:
+  _backScene:
     _name: CharacterSelector
     _fullPath: Assets/_Core/Scenes/CharacterSelector.unity
     _guid: 1dad9a1b13aab2a4ebfefc2aa616587d
-  _currentScene:
-    _name: Game
-    _fullPath: Assets/_Core/Scenes/Game.unity
-    _guid: 9040df8d86984854f99ce19958787538
+--- !u!1 &1343130773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1343130774}
+  m_Layer: 0
+  m_Name: Characters Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1343130774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1343130773}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1698451452}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1698451451
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1698451452}
+  m_Layer: 0
+  m_Name: 'Containers '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1698451452
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1698451451}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1343130774}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 801544082}
   - {fileID: 297543881}
+  - {fileID: 1698451452}

@@ -1,8 +1,8 @@
 using System;
-using StartlingPlay.Core.UI.Essentials;
+using StarlingPlay.UI.Essentials;
 using UnityEngine;
 
-namespace StartlingPlay.Core.Views
+namespace StarlingPlay.Core.Views
 {
     public class GameplayView : BaseView
     {

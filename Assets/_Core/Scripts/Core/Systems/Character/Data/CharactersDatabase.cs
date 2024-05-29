@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace StartlingPlay.Core.Character
+namespace StarlingPlay.Core.Character
 {
     [CreateAssetMenu(fileName = "Characters Database", menuName = "Configurations/Characters", order = 0)]
     public class CharactersDatabase : ScriptableObject

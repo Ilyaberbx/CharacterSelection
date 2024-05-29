@@ -1,14 +1,14 @@
 using Better.Commons.Runtime.Extensions;
 using Better.Locators.Runtime;
 using Better.SceneManagement.Runtime;
-using StartlingPlay.Core.Character;
-using StartlingPlay.Core.Models;
-using StartlingPlay.Core.Presenters;
-using StartlingPlay.Services.Persistence;
-using StartlingPlay.Services.UI;
+using StarlingPlay.Core.Character;
+using StarlingPlay.Core.Models;
+using StarlingPlay.Core.Presenters;
+using StarlingPlay.Services.Persistence;
+using StarlingPlay.Services.UI;
 using UnityEngine;
 
-namespace StartlingPlay.Core
+namespace StarlingPlay.Core
 {
     public class SelectionEntryPoint : MonoBehaviour
     {
@@ -17,6 +17,8 @@ namespace StartlingPlay.Core
         
         private void Start()
         {
+            Debug.Log("Entry Selection");
+            
             InitializeScreen();
         }
 

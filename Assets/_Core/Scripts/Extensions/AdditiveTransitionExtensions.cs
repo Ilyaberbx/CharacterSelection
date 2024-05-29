@@ -3,10 +3,10 @@ using System.Threading.Tasks;
 using Better.Commons.Runtime.Extensions;
 using Better.SceneManagement.Runtime;
 using Better.SceneManagement.Runtime.Transitions;
-using StartlingPlay.Utility;
+using StarlingPlay.Utility;
 using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
 
-namespace StartlingPlay.Extensions
+namespace StarlingPlay.Extensions
 {
     public static class AdditiveTransitionExtensions
     {
@@ -15,10 +15,11 @@ namespace StartlingPlay.Extensions
             var activeScene = UnitySceneManager.GetActiveScene();
             var sceneCount = UnitySceneManager.sceneCount;
             var scenesToUnload = new List<SceneReference>();
-
-            if (activeScene != SceneHelper.CoreScene)
+            var coreSceneName = SceneHelper.CoreSceneName;
+            
+            if (activeScene.name != coreSceneName)
             {
-                activeScene = SceneHelper.CoreScene;
+                activeScene = UnitySceneManager.GetSceneByName(coreSceneName);
 
                 UnitySceneManager.SetActiveScene(activeScene);
             }

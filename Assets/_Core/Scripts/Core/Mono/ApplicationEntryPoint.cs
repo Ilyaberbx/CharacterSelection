@@ -1,13 +1,12 @@
 using System.Threading;
 using Better.Locators.Runtime;
 using Better.SceneManagement.Runtime;
-using StartlingPlay.Extensions;
-using StartlingPlay.Utility;
+using StarlingPlay.Extensions;
+using StarlingPlay.Utility;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using SceneManager = UnityEngine.SceneManagement.SceneManager;
 
-namespace StartlingPlay.Core
+namespace StarlingPlay.Core
 {
     public class ApplicationEntryPoint : MonoBehaviour
     {
@@ -21,8 +20,12 @@ namespace StartlingPlay.Core
             Application.runInBackground = true;
             Application.targetFrameRate = 60;
 
-            if (SceneManager.GetActiveScene() != SceneHelper.CoreScene)
-                SceneManager.LoadSceneAsync(SceneHelper.CoreScene.name, LoadSceneMode.Single);
+            var coreSceneName = SceneHelper.CoreSceneName;
+            
+            if (SceneManager.GetActiveScene().name != coreSceneName)
+            {
+                SceneManager.LoadSceneAsync(coreSceneName);
+            }
         }
 
         private void Awake()
@@ -32,6 +35,8 @@ namespace StartlingPlay.Core
 
         private async void Start()
         {
+            Debug.Log("Entry Application");
+            
             var sceneService = await ServiceLocator.GetAsync<SceneService>(_tokenSource.Token);
 
             sceneService

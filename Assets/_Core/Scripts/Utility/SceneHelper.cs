@@ -1,9 +1,9 @@
 using UnityEngine.SceneManagement;
 
-namespace StartlingPlay.Utility
+namespace StarlingPlay.Utility
 {
     public static class SceneHelper
     {
-        public static Scene CoreScene => SceneManager.GetSceneAt(0);
+        public static string CoreSceneName => System.IO.Path.GetFileNameWithoutExtension(SceneUtility.GetScenePathByBuildIndex(0));
     }
 }

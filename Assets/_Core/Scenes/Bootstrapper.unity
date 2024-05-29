@@ -122,6 +122,89 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &251207493
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 251207494}
+  - component: {fileID: 251207496}
+  m_Layer: 0
+  m_Name: UICamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &251207494
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251207493}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 961607080}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!20 &251207496
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251207493}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 4
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 32
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
 --- !u!1 &649006200
 GameObject:
   m_ObjectHideFlags: 0
@@ -176,21 +259,17 @@ MonoBehaviour:
       data:
         _services:
         - rid: 7099748440624857091
-        - rid: 7099748440624857092
-        - rid: 7099748440624857093
-        - rid: 7099748440624857094
+        - rid: 7099748461276561408
+        - rid: 7099748461276561409
     - rid: 7099748440624857091
       type: {class: SceneService, ns: Better.SceneManagement.Runtime, asm: BetterSceneManagement.Runtime}
       data: 
-    - rid: 7099748440624857092
-      type: {class: SavesService, ns: Better.Saves.Runtime, asm: BetterSaves.Runtime}
-      data: 
-    - rid: 7099748440624857093
-      type: {class: UserService, ns: StartlingPlay.Services.Persistence, asm: Assembly-CSharp}
+    - rid: 7099748461276561408
+      type: {class: UserService, ns: StarlingPlay.Services.Persistence, asm: Assembly-CSharp}
       data:
         _settings: {fileID: 11400000, guid: 91c2b7868c3e859479fb94121247a44c, type: 2}
-    - rid: 7099748440624857094
-      type: {class: ScreenService, ns: StartlingPlay.Services.UI, asm: Assembly-CSharp}
+    - rid: 7099748461276561409
+      type: {class: ScreenService, ns: StarlingPlay.Services.UI, asm: Assembly-CSharp}
       data:
         _settings: {fileID: 11400000, guid: 564992ad8061b7f4d970b9d3bdbd0799, type: 2}
         _uiRoot: {fileID: 1629140316}
@@ -225,6 +304,7 @@ Transform:
   m_Children:
   - {fileID: 1629140316}
   - {fileID: 1309465327}
+  - {fileID: 251207494}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1309465324

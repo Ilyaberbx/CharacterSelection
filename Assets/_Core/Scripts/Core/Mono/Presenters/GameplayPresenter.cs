@@ -1,11 +1,11 @@
 using Better.Locators.Runtime;
 using Better.SceneManagement.Runtime;
-using StartlingPlay.Core.Models;
-using StartlingPlay.Core.Views;
-using StartlingPlay.Extensions;
-using StartlingPlay.Utility;
+using StarlingPlay.Core.Models;
+using StarlingPlay.Core.Views;
+using StarlingPlay.Extensions;
+using StarlingPlay.Utility;
 
-namespace StartlingPlay.Core.Presenters
+namespace StarlingPlay.Core.Presenters
 {
     public class GameplayPresenter : BasePresenter<GameplayView, GameplayModel>
     {
@@ -23,12 +23,12 @@ namespace StartlingPlay.Core.Presenters
             var scene = Model.BackScene;
 
             using var additiveTransition = SceneService.CreateAdditiveTransition();
-
+            
             additiveTransition
                 .SafeUnloadAll()
                 .LoadScene(scene)
                 .RunWithActive(scene);
-
+            
             UIUtility.CloseAll();
         }
     }

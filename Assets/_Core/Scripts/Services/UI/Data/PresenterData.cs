@@ -1,10 +1,10 @@
 using System;
 using Better.Attributes.Runtime.Select;
 using Better.Commons.Runtime.DataStructures.SerializedTypes;
-using StartlingPlay.Core.Presenters;
+using StarlingPlay.Core.Presenters;
 using UnityEngine;
 
-namespace StartlingPlay.Services.UI.Data
+namespace StarlingPlay.Services.UI.Data
 {
     [Serializable]
     public class PresenterData
@@ -14,6 +14,6 @@ namespace StartlingPlay.Services.UI.Data
         
         public BasePresenter Prefab => _prefab;
 
-        public Type Type => _serializedType;
+        public Type Type => _serializedType.Type;
     }
 }

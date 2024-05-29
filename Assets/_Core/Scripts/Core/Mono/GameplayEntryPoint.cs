@@ -2,38 +2,32 @@ using System.Threading.Tasks;
 using Better.Commons.Runtime.Extensions;
 using Better.Locators.Runtime;
 using Better.SceneManagement.Runtime;
-using StartlingPlay.Core.Models;
-using StartlingPlay.Core.Presenters;
-using StartlingPlay.Services.Character;
-using StartlingPlay.Services.Persistence;
-using StartlingPlay.Services.UI;
+using StarlingPlay.Core.Models;
+using StarlingPlay.Core.Presenters;
+using StarlingPlay.Services.Character;
+using StarlingPlay.Services.Persistence;
+using StarlingPlay.Services.UI;
 using UnityEngine;
-using SceneManager = UnityEngine.SceneManagement.SceneManager;
 
-namespace StartlingPlay.Core
+namespace StarlingPlay.Core
 {
     public class GameplayEntryPoint : MonoBehaviour
     {
-        [SerializeField] private SceneReference _characterSelectionScene;
-        [SerializeField] private SceneReference _currentScene;
+        [SerializeField] private SceneReference _backScene;
         
         private void Start()
         {
-            SetActive(_currentScene);
+            Debug.Log("Entry Gameplay");
+            
             InitializeCharacters();
             InitializeScreen().Forget();
         }
-
-        private void SetActive(SceneReference scene)
-        {
-            SceneManager.SetActiveScene(SceneManager.GetSceneByName(scene.Name));
-        }
-
+        
         private Task<GameplayPresenter> InitializeScreen()
         {
             var screenService = ServiceLocator.Get<ScreenService>();
             
-            var model = new GameplayModel(_characterSelectionScene);
+            var model = new GameplayModel(_backScene);
 
             return screenService.Open<GameplayPresenter, GameplayModel>(model);
         }

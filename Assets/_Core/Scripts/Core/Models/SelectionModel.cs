@@ -1,10 +1,10 @@
 using System.Collections.Generic;
 using Better.SceneManagement.Runtime;
-using StartlingPlay.Core.Character;
-using StartlingPlay.Services.Persistence;
+using StarlingPlay.Core.Character;
+using StarlingPlay.Services.Persistence;
 using UnityEngine;
 
-namespace StartlingPlay.Core.Models
+namespace StarlingPlay.Core.Models
 {
     public class SelectionModel : IModel
     {

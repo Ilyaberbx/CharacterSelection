@@ -1,8 +1,8 @@
 using System.Threading.Tasks;
-using StartlingPlay.Core.Models;
-using StartlingPlay.Core.Presenters;
+using StarlingPlay.Core.Models;
+using StarlingPlay.Core.Presenters;
 
-namespace StartlingPlay.UI.Systems
+namespace StarlingPlay.UI.Systems
 {
     public interface IUISystem
     {

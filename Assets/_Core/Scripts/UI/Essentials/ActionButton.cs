@@ -3,8 +3,9 @@ using Better.Commons.Runtime.Components.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace StartlingPlay.Core.UI.Essentials
+namespace StarlingPlay.UI.Essentials
 {
+    [RequireComponent(typeof(Button))]
     public class ActionButton : UIMonoBehaviour
     {
         public event Action OnClick;

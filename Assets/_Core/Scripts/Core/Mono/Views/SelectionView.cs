@@ -1,9 +1,9 @@
 using System;
-using StartlingPlay.Core.UI.Essentials;
+using StarlingPlay.UI.Essentials;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace StartlingPlay.Core.Views
+namespace StarlingPlay.Core.Views
 {
     public class SelectionView : BaseView
     {

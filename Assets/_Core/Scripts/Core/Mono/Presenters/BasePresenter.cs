@@ -1,9 +1,9 @@
 using System;
-using StartlingPlay.Core.Models;
-using StartlingPlay.Core.Views;
+using StarlingPlay.Core.Models;
+using StarlingPlay.Core.Views;
 using UnityEngine;
 
-namespace StartlingPlay.Core.Presenters
+namespace StarlingPlay.Core.Presenters
 {
     [RequireComponent(typeof(BaseView))]
     public abstract class BasePresenter : MonoBehaviour

@@ -1,7 +1,7 @@
 using Better.Commons.Runtime.Components.UI;
 using UnityEngine;
 
-namespace StartlingPlay.Core.Views
+namespace StarlingPlay.Core.Views
 {
     [RequireComponent(typeof(CanvasGroup))]
     public abstract class BaseView : UIMonoBehaviour

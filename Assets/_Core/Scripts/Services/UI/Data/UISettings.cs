@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace StartlingPlay.Services.UI.Data
+namespace StarlingPlay.Services.UI.Data
 {
     [CreateAssetMenu(fileName = "UI Settings", menuName = "Configurations/Services/UI", order = 0)]
     public class UISettings : ScriptableObject

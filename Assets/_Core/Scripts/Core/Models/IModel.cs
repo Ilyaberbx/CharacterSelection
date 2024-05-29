@@ -1,4 +1,4 @@
-namespace StartlingPlay.Core.Models
+namespace StarlingPlay.Core.Models
 {
     public interface IModel
     { }

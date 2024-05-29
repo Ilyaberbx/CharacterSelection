@@ -2,13 +2,13 @@ using System;
 using System.Threading;
 using System.Threading.Tasks;
 using Better.Services.Runtime;
-using StartlingPlay.Core.Models;
-using StartlingPlay.Core.Presenters;
-using StartlingPlay.Services.UI.Data;
-using StartlingPlay.UI.Systems;
+using StarlingPlay.Core.Models;
+using StarlingPlay.Core.Presenters;
+using StarlingPlay.Services.UI.Data;
+using StarlingPlay.UI.Systems;
 using UnityEngine;
 
-namespace StartlingPlay.Services.UI
+namespace StarlingPlay.Services.UI
 {
     [Serializable]
     public class ScreenService : PocoService<UISettings>, IUISystem

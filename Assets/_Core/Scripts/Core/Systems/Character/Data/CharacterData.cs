@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace StartlingPlay.Core.Character
+namespace StarlingPlay.Core.Character
 {
     [Serializable]
     public class CharacterData 

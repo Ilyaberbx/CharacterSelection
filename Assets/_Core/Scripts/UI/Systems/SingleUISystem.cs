@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Better.Commons.Runtime.Utility;
-using StartlingPlay.Core;
-using StartlingPlay.Core.Models;
-using StartlingPlay.Core.Presenters;
-using StartlingPlay.Services.UI.Data;
+using StarlingPlay.Core.Models;
+using StarlingPlay.Core.Presenters;
+using StarlingPlay.Services.UI.Data;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace StartlingPlay.UI.Systems
+namespace StarlingPlay.UI.Systems
 {
     public class SingleUISystem : IUISystem
     {
@@ -36,8 +35,6 @@ namespace StartlingPlay.UI.Systems
                 DebugUtility.LogException<NullReferenceException>();
                 return Task.FromResult<TPresenter>(null);
             }
-
-            Debug.Log("Open Single UI: " + typeof(TPresenter).Name);
             
             var presenter = Object.Instantiate(data.Prefab, _root).GetComponent<TPresenter>();
 

@@ -1,6 +1,6 @@
 using Better.SceneManagement.Runtime;
 
-namespace StartlingPlay.Core.Models
+namespace StarlingPlay.Core.Models
 {
     public class GameplayModel : IModel
     {

@@ -4,7 +4,7 @@ using Better.Commons.Runtime.Utility;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace StartlingPlay.Core.Character
+namespace StarlingPlay.Core.Character
 {
     public class CharacterFactory
     {

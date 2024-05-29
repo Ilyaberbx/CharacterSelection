@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Better.Saves.Runtime.Data;
 using Better.Services.Runtime;
 
-namespace StartlingPlay.Services.Persistence
+namespace StarlingPlay.Services.Persistence
 {
     public class UserService : PocoService<UserSettings>
     {

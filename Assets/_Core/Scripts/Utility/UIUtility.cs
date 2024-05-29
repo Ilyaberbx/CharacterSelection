@@ -1,7 +1,7 @@
 using Better.Locators.Runtime;
-using StartlingPlay.Services.UI;
+using StarlingPlay.Services.UI;
 
-namespace StartlingPlay.Utility
+namespace StarlingPlay.Utility
 {
     public static class UIUtility
     {
