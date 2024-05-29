@@ -1,6 +1,8 @@
 using System.Threading;
 using Better.Locators.Runtime;
 using Better.SceneManagement.Runtime;
+using StartlingPlay.Extensions;
+using StartlingPlay.Utility;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using SceneManager = UnityEngine.SceneManagement.SceneManager;
@@ -9,8 +11,6 @@ namespace StartlingPlay.Core
 {
     public class ApplicationEntryPoint : MonoBehaviour
     {
-        private const string CoreScene = "Bootstrapper";
-
         [SerializeField] private SceneReference _characterSelectionScene;
 
         private CancellationTokenSource _tokenSource;
@@ -21,8 +21,8 @@ namespace StartlingPlay.Core
             Application.runInBackground = true;
             Application.targetFrameRate = 60;
 
-            if (SceneManager.GetActiveScene().name != CoreScene)
-                SceneManager.LoadSceneAsync(CoreScene, LoadSceneMode.Single);
+            if (SceneManager.GetActiveScene() != SceneHelper.CoreScene)
+                SceneManager.LoadSceneAsync(SceneHelper.CoreScene.name, LoadSceneMode.Single);
         }
 
         private void Awake()
@@ -34,10 +34,10 @@ namespace StartlingPlay.Core
         {
             var sceneService = await ServiceLocator.GetAsync<SceneService>(_tokenSource.Token);
 
-            await sceneService
+            sceneService
                 .CreateAdditiveTransition()
                 .LoadScene(_characterSelectionScene)
-                .RunAsync();
+                .RunWithActive(_characterSelectionScene);
         }
 
         private void OnDestroy()

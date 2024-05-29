@@ -81,6 +81,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _view: {fileID: 5530802237088051184}
+  _core:
+    _name: Bootstrapper
+    _fullPath: Assets/_Core/Scenes/Bootstrapper.unity
+    _guid: 2ccef01a9582efa40809bdc060464734
 --- !u!1 &4755953736724510594
 GameObject:
   m_ObjectHideFlags: 0

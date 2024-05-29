@@ -20,4 +20,4 @@ MonoBehaviour:
   - _serializedType:
       _fullQualifiedName: StartlingPlay.Core.Presenters.GameplayPresenter, Assembly-CSharp,
         Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-    _prefab: {fileID: 1356607423233333581, guid: d05fee48f5f22fa4d8a29826559d9b84, type: 3}
+    _prefab: {fileID: 5395265367031853554, guid: 72a385c03d432e943a7b1004d1a88210, type: 3}

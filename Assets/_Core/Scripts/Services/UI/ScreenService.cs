@@ -4,8 +4,8 @@ using System.Threading.Tasks;
 using Better.Services.Runtime;
 using StartlingPlay.Core.Models;
 using StartlingPlay.Core.Presenters;
+using StartlingPlay.Services.UI.Data;
 using StartlingPlay.UI.Systems;
-using StartlingPlay.UI.Systems.Data;
 using UnityEngine;
 
 namespace StartlingPlay.Services.UI

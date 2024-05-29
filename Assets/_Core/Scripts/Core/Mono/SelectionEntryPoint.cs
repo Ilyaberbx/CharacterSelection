@@ -17,11 +17,15 @@ namespace StartlingPlay.Core
         
         private void Start()
         {
+            InitializeScreen();
+        }
+
+        private void InitializeScreen()
+        {
             var userService = ServiceLocator.Get<UserService>();
             var screenService = ServiceLocator.Get<ScreenService>();
 
             var data = _charactersDatabase.CharactersData;
-            
             var model = new SelectionModel(data, userService, _gameReference);
 
             screenService.Open<SelectionPresenter, SelectionModel>(model).Forget();

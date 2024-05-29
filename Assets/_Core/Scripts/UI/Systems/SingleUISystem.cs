@@ -6,7 +6,7 @@ using Better.Commons.Runtime.Utility;
 using StartlingPlay.Core;
 using StartlingPlay.Core.Models;
 using StartlingPlay.Core.Presenters;
-using StartlingPlay.UI.Systems.Data;
+using StartlingPlay.Services.UI.Data;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
@@ -37,6 +37,8 @@ namespace StartlingPlay.UI.Systems
                 return Task.FromResult<TPresenter>(null);
             }
 
+            Debug.Log("Open Single UI: " + typeof(TPresenter).Name);
+            
             var presenter = Object.Instantiate(data.Prefab, _root).GetComponent<TPresenter>();
 
             presenter.SetDerivedModel(model);

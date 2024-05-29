@@ -2,6 +2,7 @@ using Better.Locators.Runtime;
 using Better.SceneManagement.Runtime;
 using StartlingPlay.Core.Models;
 using StartlingPlay.Core.Views;
+using StartlingPlay.Extensions;
 using StartlingPlay.Utility;
 using UnityEngine;
 
@@ -51,14 +52,18 @@ namespace StartlingPlay.Core.Presenters
 
         private void OnPlayClicked()
         {
-            UIUtility.CloseAll();
+            View.Interactable = false;
             
-            var additiveTransition = SceneService.CreateAdditiveTransition();
-
+            using var additiveTransition = SceneService.CreateAdditiveTransition();
+            
+            var scene = Model.GameScene;
+            
             additiveTransition
-                .UnloadAllScenes()
-                .LoadScene(Model.GameScene)
-                .Run();
+                .SafeUnloadAll()
+                .LoadScene(scene)
+                .RunWithActive(scene);
+            
+            UIUtility.CloseAll();
         }
     }
 }

@@ -353,6 +353,10 @@ MonoBehaviour:
     _name: CharacterSelector
     _fullPath: Assets/_Core/Scenes/CharacterSelector.unity
     _guid: 1dad9a1b13aab2a4ebfefc2aa616587d
+  _currentScene:
+    _name: Game
+    _fullPath: Assets/_Core/Scenes/Game.unity
+    _guid: 9040df8d86984854f99ce19958787538
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

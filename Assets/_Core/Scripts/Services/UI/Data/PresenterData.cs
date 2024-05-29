@@ -1,11 +1,10 @@
 using System;
 using Better.Attributes.Runtime.Select;
 using Better.Commons.Runtime.DataStructures.SerializedTypes;
-using StartlingPlay.Core;
 using StartlingPlay.Core.Presenters;
 using UnityEngine;
 
-namespace StartlingPlay.UI.Systems.Data
+namespace StartlingPlay.Services.UI.Data
 {
     [Serializable]
     public class PresenterData
